@@ -6,6 +6,16 @@ import java.util.List;
 public class StatementList extends Node {
 	List<Node> StatementList = new ArrayList<Node>();
 	LexicalAnalyzer lex;
+	Environment env;
+
+	public StatementList(Environment env, LexicalAnalyzer lex) {
+		this.env = env;
+		this.lex = lex;
+	}
+
+	public Node isMatch(Environment env , LexicalUnit lu){
+		return new Stmt(env);
+	}
 
 	// parseメソッドをオーバーライド
 	@Override

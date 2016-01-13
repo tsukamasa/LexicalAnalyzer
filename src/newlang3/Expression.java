@@ -9,6 +9,16 @@ public class Expression extends Node{//四則演算　演算子の性質は二�
  *
  * TODO：binaryクラスを作る
  */
+	Environment env;
+	LexicalAnalyzer lex;
+
+
+
+	public static Node isMatch(Environment env , LexicalUnit lu){
+		return null;
+
+	}
+
 
 	public Node getOperand(){
 		return null;
@@ -25,8 +35,6 @@ public class Expression extends Node{//四則演算　演算子の性質は二�
 		default:
 			break;
 		}
-
-
 		return false;
 	}
 

@@ -1,6 +1,5 @@
 package newlang3;
 
-import org.omg.CORBA.Environment;
 
 public class Node {
     NodeType type;
